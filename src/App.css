@@ -1,0 +1,28 @@
+*,::after,::before{
+  box-sizing: inherit;
+}
+.tabs{
+  list-style: none;
+  padding: 0;
+}
+
+
+.app-wrapper{
+  display: flex;
+}
+
+body{
+  background: #c4c0c0;
+}
+.app{
+  display: flex;
+}
+
+.mlm{
+  display: flex;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+
+}

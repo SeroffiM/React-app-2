@@ -1,0 +1,42 @@
+h1{
+  margin: 0px;
+}
+.container-page{
+  width: 100%;
+  height: 100%;
+  background: cornflowerblue;
+  border-radius: 0px 5px 5px 0px;
+}
+.banner-wrapper{
+  width: 100%;
+  height: 400px;
+}
+.header-banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.section{
+  position: relative;
+  min-height: 350px;
+}
+
+.text-header{
+  font-family: sans-serif;
+  color: #FFF;
+  padding-top: 100px;
+  position: relative;
+  margin-left: 100px;
+}
+.text-description{
+  width: 600px;
+}
+.container{
+  font-family: sans-serif;
+  /*margin-left: 100px;*/
+}
+.main-text{
+  font-size: 20px;
+  line-height: 1.9;
+  margin-left: 100px;
+}

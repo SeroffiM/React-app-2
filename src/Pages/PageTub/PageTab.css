@@ -1,0 +1,99 @@
+.who-us-tabs{
+  margin: 0 9% 53px;
+}
+.tabs{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  z-index: 1;
+  box-shadow: inset 0 -1px 0 0 #dcdddd;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.tabs__tab:not(last-child){
+  margin-right: 50px;
+}
+.who-us-tabs__tab:not(:last-child) {
+  margin-right: 110px;
+}
+.tabs__tab.is-active {
+  border-color: #c7000b;
+  color: #231815;
+  fill: #231815;
+}
+.who-us-tabs__tab.is-active .who-us-tabs__tab-icon, .who-us-tabs__tab:hover .who-us-tabs__tab-icon {
+  color: #c7000b;
+}
+.who-us-tabs__tab.is-active::after {
+  background: #c7000b;
+  transform: translateX(-50%) scale(1);
+}
+.tabs__tab{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  transition: border-color .2s,color .2s,fill .2s;
+  color: #595757;
+  padding: 0 0 12px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+.who-us-tabs__tab{
+   padding: 0 0 10px;
+   border-bottom: none;
+   transition: border-color .2s,color .2s,fill .2s;
+   position: relative;
+ }
+.who-us-tabs__tab-icon {
+  height: 55px;
+  margin-bottom: 10px;
+}
+.who-us-tabs__tab::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100px;
+  height: 2px;
+  transform: translateX(-50%) scale(0);
+  background: 0 0;
+  transition: all 250ms ease 0s;
+}
+
+.who-us-tabs__tab-icon-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+.who-us-tabs__tab-icon-img--third {
+  width: 58px;
+  height: 51px;
+}
+.svg-icon {
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+  fill: currentColor;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.tabs-content__wrapper.is-active {
+  display: block;
+  transform: translate3d(0,0,0);
+}
+.tabs-content__wrapper {
+  transition: opacity 1s, transform .2s;
+  transform: translate3d(0, 10px, 0);
+}
+.tabs-content__wrapper.is-active .tabs-content__wrapper-inner {
+  opacity: 1;
+}
+.tabs-content__wrapper-inner {
+  /*opacity: 0;*/
+  transition: opacity .3s, transform .2s;
+}
